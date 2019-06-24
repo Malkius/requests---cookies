@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}EL JUEGO{% endblock title %}
+
+{% block content %}
+    <div>
+        <h1>Empecemos</h1>
+        <h2>Teclee un número entre el 1 y el 30</h2>
+    </div>
+
+    <div>
+        <form method="post" action="/resultado">
+            <input type="text" name="guess" placeholder="Pruebe suerte">
+            <br>
+        <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+{% endblock content %}
