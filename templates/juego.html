@@ -10,10 +10,10 @@
 
     <div>
         <form method="post" action="/resultado">
-            <input type="text" name="guess" placeholder="Pruebe suerte">
-            <br>
-        <button type="submit">Enviar</button>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Número" name="guess">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
-
 {% endblock content %}
